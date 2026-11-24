@@ -1,0 +1,20 @@
+/* Кнопки скачивания под заголовком */
+.dl-bar { display: flex; flex-wrap: wrap; gap: .5rem; margin: -.4rem 0 1.4rem; }
+.dl-bar p { display: contents; }
+.md-typeset .md-button.dl-btn { font-size: .68rem; padding: .35em 1em; margin: 0; }
+
+/* Карточки курсов на главной */
+.md-typeset .grid.cards > ul > li { display: flex; flex-direction: column; }
+.md-typeset .grid.cards .md-button { font-size: .7rem; padding: .4em 1.1em; margin: .3rem .3rem 0 0; }
+.md-typeset .grid.cards .lg { font-size: 2.2em; }
+.md-typeset .grid.cards small { opacity: .7; }
+
+/* Галочки в уроках крупнее и удобнее */
+.md-typeset .task-list-item { margin-bottom: .25em; }
+.md-typeset .task-list-control { cursor: pointer; }
+
+/* Таблицы на всю ширину */
+.md-typeset table:not([class]) { display: table; width: 100%; }
+
+/* Карточки не растягиваются, когда курс один */
+.md-typeset .grid.cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr)) !important; }
